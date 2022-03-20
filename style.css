@@ -1,0 +1,108 @@
+*,
+*:before,
+*:after {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Signpainter;
+    src: url(Assets/Fonts/signpainter-housescript-webfont.woff);
+}
+
+* {
+    font-family: Signpainter;
+}
+
+body {
+    height: 100vh ;
+    background-color:rgb(223, 91, 161) ;
+}
+
+.container {
+
+    background-color: rgba(255, 255, 255, 0.281);
+    min-width: 450px;
+    width: 40%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+
+#newtask {
+    background-color: white ;
+    padding: 30px 20px;
+
+    border-radius: 3px;
+}
+
+#newtask input {
+    width: 70%;
+    height:  45px;
+    font-size: 22px;
+    border: 2px solid rgba(61, 37, 50, 0.37);
+    padding: 12px;
+    color: #462d3b;
+    font-weight: 500;
+    position: relative;
+}
+
+#newtask input:focus {
+    outline: none;
+    border-color: rgb(255, 164, 213) ;
+}
+
+#newtask button {
+    position: relative;
+    float: right;
+    width : 24% ;
+    height: 45px;
+    border-radius: 7px;
+    font-weight: 450;
+    font-size: 22px;
+    color: white;
+    background-color: rgb(255, 106, 185);
+    border: none;
+    cursor: pointer;
+}
+
+#tasks {
+    background-color: white;
+    padding:  30px 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    width:  100%;
+    position: relative;
+}
+.task{
+    background-color: #ffffff;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(255, 106, 185);
+    cursor: pointer;
+}
+.task span{
+    font-size: 15px;
+    font-weight: 400;
+}
+.task button{
+    background-color:rgb(255, 106, 185);
+    color: #ffffff;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.completed{
+    text-decoration: line-through;
+}
